@@ -6,7 +6,7 @@ A Tampermonkey userscript that automatically shows the **Japan Mapcode** of the 
 
 > **What is a Mapcode?** A short code (e.g. `721 272 810*43`) that identifies a precise location in Japan, widely used by Japanese car GPS/navigation systems.
 
-![Mapcode panel shown on Google Maps](./Demo.png)
+![Mapcode panel shown on Google Maps](./images/Demo.png)
 *The floating Mapcode panel (bottom-left) showing the Mapcode of the selected place / 浮動面板（左下）顯示所選地點的 Mapcode*
 
 ## Features / 功能
@@ -21,13 +21,18 @@ A Tampermonkey userscript that automatically shows the **Japan Mapcode** of the 
 ## Installation / 安裝
 
 1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension (Chrome / Edge / Firefox / Safari).
-2. Open Tampermonkey → **Create a new script** (建立新腳本).
-3. Delete the template content, paste the entire content of [`mapcode-on-google-map.js`](./mapcode-on-google-map.js), and save (`Ctrl+S`).
 
-   ![Script installed in the Tampermonkey editor](./Tampermonkey.png)
+   ![Tampermonkey on the Chrome Web Store](./images/Tampermonkey_1.png)
+
+2. On Chrome/Edge, open the extension's details page (`chrome://extensions` → Tampermonkey → **Details**) and enable **Allow user scripts** (允許使用者指令碼) so Tampermonkey can run userscripts. On older Chrome versions without this toggle, enable **Developer mode** on the extensions page instead.
+
+   ![Enable "Allow user scripts" in the extension settings](./images/Tampermonkey_3.png)
+
+3. Open Tampermonkey → **Create a new script** (建立新腳本), delete the template content, paste the entire content of [`mapcode-on-google-map.js`](./mapcode-on-google-map.js), and save (`Ctrl+S`).
+
+   ![Script installed in the Tampermonkey editor](./images/Tampermonkey_2.png)
+
 4. Open [Google Maps](https://www.google.com/maps). On first run, Tampermonkey may ask to allow a cross-origin request to `api.japanmapcode.com` — click **Always allow** (總是允許).
-
-> On Chrome/Edge (Manifest V3) you may also need to enable **Developer mode** for extensions so Tampermonkey can run userscripts.
 
 ## Usage / 使用方式
 
